@@ -1,0 +1,57 @@
+﻿@model SQLiteClient.Models.FournisseurDetailsVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Messages.Details</h2>
+
+<div>
+    <h4>@Messages.Fournisseur</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FournisseurID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FournisseurID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Compangnie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Compangnie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adresse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adresse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telephone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink(Messages.RetourListe, "Index")
+</p>

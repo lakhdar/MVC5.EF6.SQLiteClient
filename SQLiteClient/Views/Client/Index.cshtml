@@ -1,0 +1,78 @@
+﻿@using Domain
+@using SQLiteClient.Models
+
+@model PagedList<ClientElementDeListeVM>
+
+@{
+    ViewBag.Title = "Index";
+    var totalpages = (int)Math.Ceiling((double)Model.Total / Model.PageCount);
+}
+
+<h2 class="text-center">@Messages.ListClients</h2>
+
+<p>
+    @Html.ActionLink(Messages.Nouveau, "Create", "Client", null, new { @class = "btn btn-primary btn-sm pull-right" })
+</p>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().ClientID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().Compagnie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().Contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().Adresse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().Telephone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().TotalCommandes)
+        </th>
+        
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.PagedData)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Compagnie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adresse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telephone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCommandes)
+            </td>
+            <td>
+                @Html.ActionLink(Messages.Details, "Details", new { id = item.ClientID }) |
+                @Html.ActionLink(Messages.Supprimer, "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+</table>
+<ul class="pagination pull-right">
+    @foreach (int item in Enumerable.Range(0, totalpages))
+    {
+        <li class="@(@Model.PageIndex==item ? "active" : "")">
+            @Html.ActionLink(item.ToString(), "Index", new { pageIndex = item })
+        </li>
+
+    }
+    <li> &#160;&#160;&#160;&#160;Total :@Model.Total</li>
+</ul>
+

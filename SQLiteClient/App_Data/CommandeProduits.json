@@ -1,0 +1,1400 @@
+[
+  {
+    "CommandeID": "10265",
+    "ProduitID": "17",
+    "asPrixUnitaire": "31.2000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10265",
+    "ProduitID": "70",
+    "asPrixUnitaire": "12.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10278",
+    "ProduitID": "44",
+    "asPrixUnitaire": "15.5000",
+    "Quantite": "16"
+  },
+  {
+    "CommandeID": "10278",
+    "ProduitID": "59",
+    "asPrixUnitaire": "44.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10278",
+    "ProduitID": "63",
+    "asPrixUnitaire": "35.1000",
+    "Quantite": "8"
+  },
+  {
+    "CommandeID": "10278",
+    "ProduitID": "73",
+    "asPrixUnitaire": "12.0000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10280",
+    "ProduitID": "24",
+    "asPrixUnitaire": "3.6000",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10280",
+    "ProduitID": "55",
+    "asPrixUnitaire": "19.2000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10280",
+    "ProduitID": "75",
+    "asPrixUnitaire": "6.2000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10289",
+    "ProduitID": "3",
+    "asPrixUnitaire": "8.0000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10289",
+    "ProduitID": "64",
+    "asPrixUnitaire": "26.6000",
+    "Quantite": "9"
+  },
+  {
+    "CommandeID": "10297",
+    "ProduitID": "39",
+    "asPrixUnitaire": "14.4000",
+    "Quantite": "60"
+  },
+  {
+    "CommandeID": "10297",
+    "ProduitID": "72",
+    "asPrixUnitaire": "27.8000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10308",
+    "ProduitID": "69",
+    "asPrixUnitaire": "28.8000",
+    "Quantite": "1"
+  },
+  {
+    "CommandeID": "10308",
+    "ProduitID": "70",
+    "asPrixUnitaire": "12.0000",
+    "Quantite": "5"
+  },
+  {
+    "CommandeID": "10326",
+    "ProduitID": "4",
+    "asPrixUnitaire": "17.6000",
+    "Quantite": "24"
+  },
+  {
+    "CommandeID": "10326",
+    "ProduitID": "57",
+    "asPrixUnitaire": "15.6000",
+    "Quantite": "16"
+  },
+  {
+    "CommandeID": "10326",
+    "ProduitID": "75",
+    "asPrixUnitaire": "6.2000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10331",
+    "ProduitID": "54",
+    "asPrixUnitaire": "5.9000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10340",
+    "ProduitID": "18",
+    "asPrixUnitaire": "50.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10340",
+    "ProduitID": "41",
+    "asPrixUnitaire": "7.7000",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10340",
+    "ProduitID": "43",
+    "asPrixUnitaire": "36.8000",
+    "Quantite": "40"
+  },
+  {
+    "CommandeID": "10355",
+    "ProduitID": "24",
+    "asPrixUnitaire": "3.6000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10355",
+    "ProduitID": "57",
+    "asPrixUnitaire": "15.6000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10360",
+    "ProduitID": "28",
+    "asPrixUnitaire": "36.4000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10360",
+    "ProduitID": "29",
+    "asPrixUnitaire": "99.0000",
+    "Quantite": "35"
+  },
+  {
+    "CommandeID": "10360",
+    "ProduitID": "38",
+    "asPrixUnitaire": "210.8000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10360",
+    "ProduitID": "49",
+    "asPrixUnitaire": "16.0000",
+    "Quantite": "35"
+  },
+  {
+    "CommandeID": "10360",
+    "ProduitID": "54",
+    "asPrixUnitaire": "5.9000",
+    "Quantite": "28"
+  },
+  {
+    "CommandeID": "10362",
+    "ProduitID": "25",
+    "asPrixUnitaire": "11.2000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10362",
+    "ProduitID": "51",
+    "asPrixUnitaire": "42.4000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10362",
+    "ProduitID": "54",
+    "asPrixUnitaire": "5.9000",
+    "Quantite": "24"
+  },
+  {
+    "CommandeID": "10365",
+    "ProduitID": "11",
+    "asPrixUnitaire": "16.8000",
+    "Quantite": "24"
+  },
+  {
+    "CommandeID": "10383",
+    "ProduitID": "13",
+    "asPrixUnitaire": "4.8000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10383",
+    "ProduitID": "50",
+    "asPrixUnitaire": "13.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10383",
+    "ProduitID": "56",
+    "asPrixUnitaire": "30.4000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10384",
+    "ProduitID": "20",
+    "asPrixUnitaire": "64.8000",
+    "Quantite": "28"
+  },
+  {
+    "CommandeID": "10384",
+    "ProduitID": "60",
+    "asPrixUnitaire": "27.2000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10436",
+    "ProduitID": "46",
+    "asPrixUnitaire": "9.6000",
+    "Quantite": "5"
+  },
+  {
+    "CommandeID": "10436",
+    "ProduitID": "56",
+    "asPrixUnitaire": "30.4000",
+    "Quantite": "40"
+  },
+  {
+    "CommandeID": "10436",
+    "ProduitID": "64",
+    "asPrixUnitaire": "26.6000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10436",
+    "ProduitID": "75",
+    "asPrixUnitaire": "6.2000",
+    "Quantite": "24"
+  },
+  {
+    "CommandeID": "10444",
+    "ProduitID": "17",
+    "asPrixUnitaire": "31.2000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10444",
+    "ProduitID": "26",
+    "asPrixUnitaire": "24.9000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10444",
+    "ProduitID": "35",
+    "asPrixUnitaire": "14.4000",
+    "Quantite": "8"
+  },
+  {
+    "CommandeID": "10444",
+    "ProduitID": "41",
+    "asPrixUnitaire": "7.7000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10445",
+    "ProduitID": "39",
+    "asPrixUnitaire": "14.4000",
+    "Quantite": "6"
+  },
+  {
+    "CommandeID": "10445",
+    "ProduitID": "54",
+    "asPrixUnitaire": "5.9000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10449",
+    "ProduitID": "10",
+    "asPrixUnitaire": "24.8000",
+    "Quantite": "14"
+  },
+  {
+    "CommandeID": "10449",
+    "ProduitID": "52",
+    "asPrixUnitaire": "5.6000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10449",
+    "ProduitID": "62",
+    "asPrixUnitaire": "39.4000",
+    "Quantite": "35"
+  },
+  {
+    "CommandeID": "10453",
+    "ProduitID": "48",
+    "asPrixUnitaire": "10.2000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10453",
+    "ProduitID": "70",
+    "asPrixUnitaire": "12.0000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10470",
+    "ProduitID": "18",
+    "asPrixUnitaire": "50.0000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10470",
+    "ProduitID": "23",
+    "asPrixUnitaire": "7.2000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10470",
+    "ProduitID": "64",
+    "asPrixUnitaire": "26.6000",
+    "Quantite": "8"
+  },
+  {
+    "CommandeID": "10471",
+    "ProduitID": "7",
+    "asPrixUnitaire": "24.0000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10471",
+    "ProduitID": "56",
+    "asPrixUnitaire": "30.4000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10484",
+    "ProduitID": "21",
+    "asPrixUnitaire": "8.0000",
+    "Quantite": "14"
+  },
+  {
+    "CommandeID": "10484",
+    "ProduitID": "40",
+    "asPrixUnitaire": "14.7000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10484",
+    "ProduitID": "51",
+    "asPrixUnitaire": "42.4000",
+    "Quantite": "3"
+  },
+  {
+    "CommandeID": "10501",
+    "ProduitID": "54",
+    "asPrixUnitaire": "7.4500",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10507",
+    "ProduitID": "43",
+    "asPrixUnitaire": "46.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10507",
+    "ProduitID": "48",
+    "asPrixUnitaire": "12.7500",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10509",
+    "ProduitID": "28",
+    "asPrixUnitaire": "45.6000",
+    "Quantite": "3"
+  },
+  {
+    "CommandeID": "10511",
+    "ProduitID": "4",
+    "asPrixUnitaire": "22.0000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10511",
+    "ProduitID": "7",
+    "asPrixUnitaire": "30.0000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10511",
+    "ProduitID": "8",
+    "asPrixUnitaire": "40.0000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10524",
+    "ProduitID": "10",
+    "asPrixUnitaire": "31.0000",
+    "Quantite": "2"
+  },
+  {
+    "CommandeID": "10524",
+    "ProduitID": "30",
+    "asPrixUnitaire": "25.8900",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10524",
+    "ProduitID": "43",
+    "asPrixUnitaire": "46.0000",
+    "Quantite": "60"
+  },
+  {
+    "CommandeID": "10524",
+    "ProduitID": "54",
+    "asPrixUnitaire": "7.4500",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10525",
+    "ProduitID": "36",
+    "asPrixUnitaire": "19.0000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10525",
+    "ProduitID": "40",
+    "asPrixUnitaire": "18.4000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10535",
+    "ProduitID": "11",
+    "asPrixUnitaire": "21.0000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10535",
+    "ProduitID": "40",
+    "asPrixUnitaire": "18.4000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10535",
+    "ProduitID": "57",
+    "asPrixUnitaire": "19.5000",
+    "Quantite": "5"
+  },
+  {
+    "CommandeID": "10535",
+    "ProduitID": "59",
+    "asPrixUnitaire": "55.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10538",
+    "ProduitID": "70",
+    "asPrixUnitaire": "15.0000",
+    "Quantite": "7"
+  },
+  {
+    "CommandeID": "10538",
+    "ProduitID": "72",
+    "asPrixUnitaire": "34.8000",
+    "Quantite": "1"
+  },
+  {
+    "CommandeID": "10539",
+    "ProduitID": "13",
+    "asPrixUnitaire": "6.0000",
+    "Quantite": "8"
+  },
+  {
+    "CommandeID": "10539",
+    "ProduitID": "21",
+    "asPrixUnitaire": "10.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10539",
+    "ProduitID": "33",
+    "asPrixUnitaire": "2.5000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10539",
+    "ProduitID": "49",
+    "asPrixUnitaire": "20.0000",
+    "Quantite": "6"
+  },
+  {
+    "CommandeID": "10558",
+    "ProduitID": "47",
+    "asPrixUnitaire": "9.5000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10558",
+    "ProduitID": "51",
+    "asPrixUnitaire": "53.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10558",
+    "ProduitID": "52",
+    "asPrixUnitaire": "7.0000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10558",
+    "ProduitID": "53",
+    "asPrixUnitaire": "32.8000",
+    "Quantite": "18"
+  },
+  {
+    "CommandeID": "10558",
+    "ProduitID": "73",
+    "asPrixUnitaire": "15.0000",
+    "Quantite": "3"
+  },
+  {
+    "CommandeID": "10559",
+    "ProduitID": "41",
+    "asPrixUnitaire": "9.6500",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10559",
+    "ProduitID": "55",
+    "asPrixUnitaire": "24.0000",
+    "Quantite": "18"
+  },
+  {
+    "CommandeID": "10566",
+    "ProduitID": "11",
+    "asPrixUnitaire": "21.0000",
+    "Quantite": "35"
+  },
+  {
+    "CommandeID": "10566",
+    "ProduitID": "18",
+    "asPrixUnitaire": "62.5000",
+    "Quantite": "18"
+  },
+  {
+    "CommandeID": "10566",
+    "ProduitID": "76",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10572",
+    "ProduitID": "16",
+    "asPrixUnitaire": "17.4500",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10572",
+    "ProduitID": "32",
+    "asPrixUnitaire": "32.0000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10572",
+    "ProduitID": "40",
+    "asPrixUnitaire": "18.4000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10572",
+    "ProduitID": "75",
+    "asPrixUnitaire": "7.7500",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10573",
+    "ProduitID": "17",
+    "asPrixUnitaire": "39.0000",
+    "Quantite": "18"
+  },
+  {
+    "CommandeID": "10573",
+    "ProduitID": "34",
+    "asPrixUnitaire": "14.0000",
+    "Quantite": "40"
+  },
+  {
+    "CommandeID": "10573",
+    "ProduitID": "53",
+    "asPrixUnitaire": "32.8000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10578",
+    "ProduitID": "35",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10578",
+    "ProduitID": "57",
+    "asPrixUnitaire": "19.5000",
+    "Quantite": "6"
+  },
+  {
+    "CommandeID": "10582",
+    "ProduitID": "57",
+    "asPrixUnitaire": "19.5000",
+    "Quantite": "4"
+  },
+  {
+    "CommandeID": "10582",
+    "ProduitID": "76",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "14"
+  },
+  {
+    "CommandeID": "10584",
+    "ProduitID": "31",
+    "asPrixUnitaire": "12.5000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10599",
+    "ProduitID": "62",
+    "asPrixUnitaire": "49.3000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10614",
+    "ProduitID": "11",
+    "asPrixUnitaire": "21.0000",
+    "Quantite": "14"
+  },
+  {
+    "CommandeID": "10614",
+    "ProduitID": "21",
+    "asPrixUnitaire": "10.0000",
+    "Quantite": "8"
+  },
+  {
+    "CommandeID": "10614",
+    "ProduitID": "39",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "5"
+  },
+  {
+    "CommandeID": "10625",
+    "ProduitID": "14",
+    "asPrixUnitaire": "23.2500",
+    "Quantite": "3"
+  },
+  {
+    "CommandeID": "10625",
+    "ProduitID": "42",
+    "asPrixUnitaire": "14.0000",
+    "Quantite": "5"
+  },
+  {
+    "CommandeID": "10625",
+    "ProduitID": "60",
+    "asPrixUnitaire": "34.0000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10626",
+    "ProduitID": "53",
+    "asPrixUnitaire": "32.8000",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10626",
+    "ProduitID": "60",
+    "asPrixUnitaire": "34.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10626",
+    "ProduitID": "71",
+    "asPrixUnitaire": "21.5000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10628",
+    "ProduitID": "1",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10643",
+    "ProduitID": "28",
+    "asPrixUnitaire": "45.6000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10643",
+    "ProduitID": "39",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "10643",
+    "ProduitID": "46",
+    "asPrixUnitaire": "12.0000",
+    "Quantite": "2"
+  },
+  {
+    "CommandeID": "10654",
+    "ProduitID": "4",
+    "asPrixUnitaire": "22.0000",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10654",
+    "ProduitID": "39",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10654",
+    "ProduitID": "54",
+    "asPrixUnitaire": "7.4500",
+    "Quantite": "6"
+  },
+  {
+    "CommandeID": "10663",
+    "ProduitID": "40",
+    "asPrixUnitaire": "18.4000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10663",
+    "ProduitID": "42",
+    "asPrixUnitaire": "14.0000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10663",
+    "ProduitID": "51",
+    "asPrixUnitaire": "53.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10672",
+    "ProduitID": "38",
+    "asPrixUnitaire": "263.5000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10672",
+    "ProduitID": "71",
+    "asPrixUnitaire": "21.5000",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10677",
+    "ProduitID": "26",
+    "asPrixUnitaire": "31.2300",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10677",
+    "ProduitID": "33",
+    "asPrixUnitaire": "2.5000",
+    "Quantite": "8"
+  },
+  {
+    "CommandeID": "10679",
+    "ProduitID": "59",
+    "asPrixUnitaire": "55.0000",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10682",
+    "ProduitID": "33",
+    "asPrixUnitaire": "2.5000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10682",
+    "ProduitID": "66",
+    "asPrixUnitaire": "17.0000",
+    "Quantite": "4"
+  },
+  {
+    "CommandeID": "10682",
+    "ProduitID": "75",
+    "asPrixUnitaire": "7.7500",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10689",
+    "ProduitID": "1",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "35"
+  },
+  {
+    "CommandeID": "10692",
+    "ProduitID": "63",
+    "asPrixUnitaire": "43.9000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10702",
+    "ProduitID": "3",
+    "asPrixUnitaire": "10.0000",
+    "Quantite": "6"
+  },
+  {
+    "CommandeID": "10702",
+    "ProduitID": "76",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10707",
+    "ProduitID": "55",
+    "asPrixUnitaire": "24.0000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "10707",
+    "ProduitID": "57",
+    "asPrixUnitaire": "19.5000",
+    "Quantite": "40"
+  },
+  {
+    "CommandeID": "10707",
+    "ProduitID": "70",
+    "asPrixUnitaire": "15.0000",
+    "Quantite": "28"
+  },
+  {
+    "CommandeID": "10715",
+    "ProduitID": "10",
+    "asPrixUnitaire": "31.0000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "10715",
+    "ProduitID": "71",
+    "asPrixUnitaire": "21.5000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10730",
+    "ProduitID": "16",
+    "asPrixUnitaire": "17.4500",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10730",
+    "ProduitID": "31",
+    "asPrixUnitaire": "12.5000",
+    "Quantite": "3"
+  },
+  {
+    "CommandeID": "10730",
+    "ProduitID": "65",
+    "asPrixUnitaire": "21.0500",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10732",
+    "ProduitID": "76",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10733",
+    "ProduitID": "14",
+    "asPrixUnitaire": "23.2500",
+    "Quantite": "16"
+  },
+  {
+    "CommandeID": "10733",
+    "ProduitID": "28",
+    "asPrixUnitaire": "45.6000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10733",
+    "ProduitID": "52",
+    "asPrixUnitaire": "7.0000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10741",
+    "ProduitID": "2",
+    "asPrixUnitaire": "19.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10743",
+    "ProduitID": "46",
+    "asPrixUnitaire": "12.0000",
+    "Quantite": "28"
+  },
+  {
+    "CommandeID": "10755",
+    "ProduitID": "47",
+    "asPrixUnitaire": "9.5000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10755",
+    "ProduitID": "56",
+    "asPrixUnitaire": "38.0000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10755",
+    "ProduitID": "57",
+    "asPrixUnitaire": "19.5000",
+    "Quantite": "14"
+  },
+  {
+    "CommandeID": "10755",
+    "ProduitID": "69",
+    "asPrixUnitaire": "36.0000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10759",
+    "ProduitID": "32",
+    "asPrixUnitaire": "32.0000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10768",
+    "ProduitID": "22",
+    "asPrixUnitaire": "21.0000",
+    "Quantite": "4"
+  },
+  {
+    "CommandeID": "10768",
+    "ProduitID": "31",
+    "asPrixUnitaire": "12.5000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10768",
+    "ProduitID": "60",
+    "asPrixUnitaire": "34.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10768",
+    "ProduitID": "71",
+    "asPrixUnitaire": "21.5000",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10778",
+    "ProduitID": "41",
+    "asPrixUnitaire": "9.6500",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10793",
+    "ProduitID": "41",
+    "asPrixUnitaire": "9.6500",
+    "Quantite": "14"
+  },
+  {
+    "CommandeID": "10793",
+    "ProduitID": "52",
+    "asPrixUnitaire": "7.0000",
+    "Quantite": "8"
+  },
+  {
+    "CommandeID": "10801",
+    "ProduitID": "17",
+    "asPrixUnitaire": "39.0000",
+    "Quantite": "40"
+  },
+  {
+    "CommandeID": "10801",
+    "ProduitID": "29",
+    "asPrixUnitaire": "123.7900",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10826",
+    "ProduitID": "31",
+    "asPrixUnitaire": "12.5000",
+    "Quantite": "35"
+  },
+  {
+    "CommandeID": "10826",
+    "ProduitID": "57",
+    "asPrixUnitaire": "19.5000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10827",
+    "ProduitID": "10",
+    "asPrixUnitaire": "31.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10827",
+    "ProduitID": "39",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "10835",
+    "ProduitID": "59",
+    "asPrixUnitaire": "55.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10835",
+    "ProduitID": "77",
+    "asPrixUnitaire": "13.0000",
+    "Quantite": "2"
+  },
+  {
+    "CommandeID": "10837",
+    "ProduitID": "13",
+    "asPrixUnitaire": "6.0000",
+    "Quantite": "6"
+  },
+  {
+    "CommandeID": "10837",
+    "ProduitID": "40",
+    "asPrixUnitaire": "18.4000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10837",
+    "ProduitID": "47",
+    "asPrixUnitaire": "9.5000",
+    "Quantite": "40"
+  },
+  {
+    "CommandeID": "10837",
+    "ProduitID": "76",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "10853",
+    "ProduitID": "18",
+    "asPrixUnitaire": "62.5000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10856",
+    "ProduitID": "2",
+    "asPrixUnitaire": "19.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10856",
+    "ProduitID": "42",
+    "asPrixUnitaire": "14.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10857",
+    "ProduitID": "3",
+    "asPrixUnitaire": "10.0000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10857",
+    "ProduitID": "26",
+    "asPrixUnitaire": "31.2300",
+    "Quantite": "35"
+  },
+  {
+    "CommandeID": "10857",
+    "ProduitID": "29",
+    "asPrixUnitaire": "123.7900",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10864",
+    "ProduitID": "35",
+    "asPrixUnitaire": "18.0000",
+    "Quantite": "4"
+  },
+  {
+    "CommandeID": "10864",
+    "ProduitID": "67",
+    "asPrixUnitaire": "14.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10866",
+    "ProduitID": "2",
+    "asPrixUnitaire": "19.0000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "10866",
+    "ProduitID": "24",
+    "asPrixUnitaire": "4.5000",
+    "Quantite": "6"
+  },
+  {
+    "CommandeID": "10866",
+    "ProduitID": "30",
+    "asPrixUnitaire": "25.8900",
+    "Quantite": "40"
+  },
+  {
+    "CommandeID": "10871",
+    "ProduitID": "6",
+    "asPrixUnitaire": "25.0000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10871",
+    "ProduitID": "16",
+    "asPrixUnitaire": "17.4500",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10871",
+    "ProduitID": "17",
+    "asPrixUnitaire": "39.0000",
+    "Quantite": "16"
+  },
+  {
+    "CommandeID": "10875",
+    "ProduitID": "19",
+    "asPrixUnitaire": "9.2000",
+    "Quantite": "25"
+  },
+  {
+    "CommandeID": "10875",
+    "ProduitID": "47",
+    "asPrixUnitaire": "9.5000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "10875",
+    "ProduitID": "49",
+    "asPrixUnitaire": "20.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10876",
+    "ProduitID": "46",
+    "asPrixUnitaire": "12.0000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "10876",
+    "ProduitID": "64",
+    "asPrixUnitaire": "33.2500",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10920",
+    "ProduitID": "50",
+    "asPrixUnitaire": "16.2500",
+    "Quantite": "24"
+  },
+  {
+    "CommandeID": "10924",
+    "ProduitID": "10",
+    "asPrixUnitaire": "31.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10924",
+    "ProduitID": "28",
+    "asPrixUnitaire": "45.6000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10924",
+    "ProduitID": "75",
+    "asPrixUnitaire": "7.7500",
+    "Quantite": "6"
+  },
+  {
+    "CommandeID": "10926",
+    "ProduitID": "11",
+    "asPrixUnitaire": "21.0000",
+    "Quantite": "2"
+  },
+  {
+    "CommandeID": "10926",
+    "ProduitID": "13",
+    "asPrixUnitaire": "6.0000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10926",
+    "ProduitID": "19",
+    "asPrixUnitaire": "9.2000",
+    "Quantite": "7"
+  },
+  {
+    "CommandeID": "10926",
+    "ProduitID": "72",
+    "asPrixUnitaire": "34.8000",
+    "Quantite": "10"
+  },
+  {
+    "CommandeID": "10932",
+    "ProduitID": "16",
+    "asPrixUnitaire": "17.4500",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "10932",
+    "ProduitID": "62",
+    "asPrixUnitaire": "49.3000",
+    "Quantite": "14"
+  },
+  {
+    "CommandeID": "10932",
+    "ProduitID": "72",
+    "asPrixUnitaire": "34.8000",
+    "Quantite": "16"
+  },
+  {
+    "CommandeID": "10932",
+    "ProduitID": "75",
+    "asPrixUnitaire": "7.7500",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10940",
+    "ProduitID": "7",
+    "asPrixUnitaire": "30.0000",
+    "Quantite": "8"
+  },
+  {
+    "CommandeID": "10940",
+    "ProduitID": "13",
+    "asPrixUnitaire": "6.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "10943",
+    "ProduitID": "13",
+    "asPrixUnitaire": "6.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10943",
+    "ProduitID": "22",
+    "asPrixUnitaire": "21.0000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "10943",
+    "ProduitID": "46",
+    "asPrixUnitaire": "12.0000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "10947",
+    "ProduitID": "59",
+    "asPrixUnitaire": "55.0000",
+    "Quantite": "4"
+  },
+  {
+    "CommandeID": "10952",
+    "ProduitID": "6",
+    "asPrixUnitaire": "25.0000",
+    "Quantite": "16"
+  },
+  {
+    "CommandeID": "10952",
+    "ProduitID": "28",
+    "asPrixUnitaire": "45.6000",
+    "Quantite": "2"
+  },
+  {
+    "CommandeID": "10953",
+    "ProduitID": "20",
+    "asPrixUnitaire": "81.0000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10953",
+    "ProduitID": "31",
+    "asPrixUnitaire": "12.5000",
+    "Quantite": "50"
+  },
+  {
+    "CommandeID": "10956",
+    "ProduitID": "21",
+    "asPrixUnitaire": "10.0000",
+    "Quantite": "12"
+  },
+  {
+    "CommandeID": "10956",
+    "ProduitID": "47",
+    "asPrixUnitaire": "9.5000",
+    "Quantite": "14"
+  },
+  {
+    "CommandeID": "10956",
+    "ProduitID": "51",
+    "asPrixUnitaire": "53.0000",
+    "Quantite": "8"
+  },
+  {
+    "CommandeID": "10970",
+    "ProduitID": "52",
+    "asPrixUnitaire": "7.0000",
+    "Quantite": "40"
+  },
+  {
+    "CommandeID": "11011",
+    "ProduitID": "58",
+    "asPrixUnitaire": "13.2500",
+    "Quantite": "40"
+  },
+  {
+    "CommandeID": "11011",
+    "ProduitID": "71",
+    "asPrixUnitaire": "21.5000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "11016",
+    "ProduitID": "31",
+    "asPrixUnitaire": "12.5000",
+    "Quantite": "15"
+  },
+  {
+    "CommandeID": "11016",
+    "ProduitID": "36",
+    "asPrixUnitaire": "19.0000",
+    "Quantite": "16"
+  },
+  {
+    "CommandeID": "11023",
+    "ProduitID": "7",
+    "asPrixUnitaire": "30.0000",
+    "Quantite": "4"
+  },
+  {
+    "CommandeID": "11023",
+    "ProduitID": "43",
+    "asPrixUnitaire": "46.0000",
+    "Quantite": "30"
+  },
+  {
+    "CommandeID": "11058",
+    "ProduitID": "21",
+    "asPrixUnitaire": "10.0000",
+    "Quantite": "3"
+  },
+  {
+    "CommandeID": "11058",
+    "ProduitID": "60",
+    "asPrixUnitaire": "34.0000",
+    "Quantite": "21"
+  },
+  {
+    "CommandeID": "11058",
+    "ProduitID": "61",
+    "asPrixUnitaire": "28.5000",
+    "Quantite": "4"
+  },
+  {
+    "CommandeID": "11076",
+    "ProduitID": "6",
+    "asPrixUnitaire": "25.0000",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "11076",
+    "ProduitID": "14",
+    "asPrixUnitaire": "23.2500",
+    "Quantite": "20"
+  },
+  {
+    "CommandeID": "11076",
+    "ProduitID": "19",
+    "asPrixUnitaire": "9.2000",
+    "Quantite": "10"
+  }
+]

@@ -1,0 +1,73 @@
+﻿@model SQLiteClient.Models.ProduitElementDeListeVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProduitElementDeListeVM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProduitID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProduitID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Produit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Categorie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categorie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fournisseur)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fournisseur)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCommandes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalCommandes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrixUnitaire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrixUnitaire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnityDansStock)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnityDansStock)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink(Messages.RetourListe, "Index")
+</p>

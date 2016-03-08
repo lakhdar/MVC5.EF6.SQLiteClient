@@ -1,0 +1,84 @@
+﻿@using Domain
+@using SQLiteClient.Models
+
+@model PagedList<CommandeElementDeListeVM>
+
+@{
+    ViewBag.Title = "Index";
+    var totalpages = (int)Math.Ceiling((double)Model.Total / Model.PageCount);
+}
+
+<h2 class="text-center">@Messages.ListCommandes</h2>
+
+<p>
+    @Html.ActionLink(Messages.Nouveau, "Create", "Commande", null, new { @class = "btn btn-primary btn-sm pull-right" })
+</p>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().CommandeID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().DateCommande)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().DateLivraison)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().Livreur)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().AdresseLivraison)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().Client)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().TotalProduits)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.PagedData)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommandeID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCommande)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateLivraison)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Livreur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdresseLivraison)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdresseLivraison)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalProduits)
+            </td>
+            <td>
+                @Html.ActionLink(Messages.Details, "Details", new { id = item.CommandeID }) |
+                @Html.ActionLink(Messages.Supprimer, "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+</table>
+<ul class="pagination pull-right">
+    @foreach (int item in Enumerable.Range(0, totalpages))
+    {
+        <li class="@(@Model.PageIndex==item ? "active" : "")">
+            @Html.ActionLink(item.ToString(), "Index", new { pageIndex = item })
+        </li>
+
+    }
+    <li> &#160;&#160;&#160;&#160;Total :@Model.Total</li>
+</ul>
+

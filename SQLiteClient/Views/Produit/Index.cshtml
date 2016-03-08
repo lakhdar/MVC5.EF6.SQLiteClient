@@ -1,0 +1,86 @@
+﻿@using Domain
+@using SQLiteClient.Models
+
+@model PagedList<ProduitElementDeListeVM>
+
+@{
+    ViewBag.Title = "Index";
+    var totalpages = (int)Math.Ceiling((double)Model.Total / Model.PageCount);
+}
+
+<h2 class="text-center">@Messages.Lesproduitenstock</h2>
+
+<p>
+    @Html.ActionLink( Messages.Nouveau, "Create", "Produit", null, new { @class = "btn btn-primary btn-sm pull-right" }) 
+</p>
+ 
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().ProduitID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().Produit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().Categorie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().Fournisseur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().TotalCommandes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().PrixUnitaire)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().UnityDansStock)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.PagedData)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProduitID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Produit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Categorie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fournisseur)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalCommandes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrixUnitaire)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnityDansStock)
+                </td>
+                <td>
+                    @Html.ActionLink(Messages.Details, "Details", new { id = item.ProduitID }) |
+                    @Html.ActionLink(Messages.Supprimer, "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </table>
+    <ul class="pagination pull-right">
+        @foreach (int item in Enumerable.Range(0, totalpages))
+        {
+            <li class="@(@Model.PageIndex==item ? "active" : "")">
+                @Html.ActionLink(item.ToString(), "Index", new { pageIndex = item })
+            </li>
+
+        }
+        <li> &#160;&#160;&#160;&#160;Total :@Model.Total</li>
+    </ul>
+
+
+

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="3e355622-3f0c-4276-8080-3a254d7dfdd0" name="LesComposants" linkedPackageId="239c70c9-ba96-4761-89f1-90c1af7b8d4e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="585da137-d022-48c4-ae11-865dce8004e2">
+      <profileInstance Id="84acabd2-dfb3-4c3d-a813-43b4824a8736" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ce7be528-3efa-462a-8989-5a198045a404">
+      <profileInstance Id="b5a460fc-0ef6-401d-980d-5a055ab9f88a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="4e8b45b2-4987-43e9-9f51-e133f2bbb32f" name="SQLite" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ba38503d-8087-4ac9-8359-4821155674ce" />
+        <ownedAttributesInternal>
+          <providedInterface Id="59bee50c-d4e9-44fd-b164-593226b19062" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="e2491866-371c-4bb4-baf2-bd7187562315" />
+            <type_NamedElement>
+              <interfaceMoniker Id="febd412c-bd09-465c-86cc-69aa7add48d3" LastKnownName="SQL" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="258e7a4a-7913-4fb7-9640-28d802088769" name="SQLiteClient   ASPNET MVC5  Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a86f6411-d565-412c-ba34-7893176a9bde" />
+        <suppliersInternal>
+          <dependency Id="c7fc46ae-48e2-46bd-ae5f-9c6332f4cc29">
+            <componentMoniker Id="21d6b059-94eb-4b00-b902-1bd23e5221f7" LastKnownName="Application Services de gestion" />
+            <elementDefinition Id="2499b73e-9f37-4173-85f2-c26f3d49edad" />
+          </dependency>
+          <dependency Id="93fd9b5b-194e-4f10-b16b-c1e4b7fbe01f">
+            <componentMoniker Id="96b67de6-88b1-453d-87c6-422db12271d8" LastKnownName="Gestion Dependances" />
+            <elementDefinition Id="c430d76a-2073-4f0c-b457-7a9a5fa4e509" />
+          </dependency>
+          <dependency Id="32b807d4-a5e1-4861-b560-7740625b4222">
+            <componentMoniker Id="d8787e32-8988-4483-a467-4ef87c1435cf" LastKnownName="Domaine Objet" />
+            <elementDefinition Id="e8f8d7c1-959d-47df-9840-f4761c78ed7a" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="21d6b059-94eb-4b00-b902-1bd23e5221f7" name="Application Services de gestion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b493abe-d9c3-43e8-a7c4-716084907614" />
+        <suppliersInternal>
+          <dependency Id="d5309433-43ca-4dce-8574-36e2a877250b">
+            <componentMoniker Id="d8787e32-8988-4483-a467-4ef87c1435cf" LastKnownName="Domaine Objet" />
+            <elementDefinition Id="4d2f9b6f-1f3c-46fd-bcfa-6da6105511a0" />
+          </dependency>
+          <dependency Id="778637a4-768d-4cdc-8ac8-6c7cb81395fb">
+            <componentMoniker Id="c9057f82-ca12-4d21-95e9-7c9303846118" LastKnownName="Le Logger" />
+            <elementDefinition Id="85fb5193-0891-4759-a868-c41a7a0bb134" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d8787e32-8988-4483-a467-4ef87c1435cf" name="Domaine Objet" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5764a3da-8fc6-42e7-a50f-27e3d12c4d20" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="aa199f15-1656-464e-a1bb-ad9baf221069" name="Inftastructure Accès données" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="111ebc15-3146-4284-85d4-6e98c36b0f01" />
+        <suppliersInternal>
+          <dependency Id="6197531d-cda7-4fdf-ad1d-82d224c9dd1f">
+            <componentMoniker Id="d8787e32-8988-4483-a467-4ef87c1435cf" LastKnownName="Domaine Objet" />
+            <elementDefinition Id="3cde5cf4-c1bc-43aa-8c6a-b6c9cf1e1e3f" />
+          </dependency>
+          <dependency Id="ea1e60ac-62ab-41bc-a237-dcdf40f3eaa1">
+            <componentMoniker Id="c9057f82-ca12-4d21-95e9-7c9303846118" LastKnownName="Le Logger" />
+            <elementDefinition Id="fed66a65-c98e-4099-b015-55e09e19cb0f" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface Id="ef93c475-3fac-45ce-a679-e6f4fcbe054b" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="0dc0c7bc-0ff4-40e9-8574-72e15bd42968" />
+            <type_NamedElement>
+              <interfaceMoniker Id="e5e40249-3653-4863-9451-86c8706ea5c4" LastKnownName="ADO.NET" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="e5e40249-3653-4863-9451-86c8706ea5c4" name="ADO.NET" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70beddd8-88d9-4fac-94f3-996b453202e6" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="febd412c-bd09-465c-86cc-69aa7add48d3" name="SQL" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6b66a058-20f6-4c07-8f0a-8830972c2ca6" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="96b67de6-88b1-453d-87c6-422db12271d8" name="Gestion Dependances" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="22ace0d0-7e47-42d0-a8ba-163d542be701" />
+        <suppliersInternal>
+          <dependency Id="c07c44fb-8e38-44d5-b5db-71af910b32d6">
+            <componentMoniker Id="aa199f15-1656-464e-a1bb-ad9baf221069" LastKnownName="Inftastructure Accès données" />
+            <elementDefinition Id="31476d9e-c806-41c3-bdbc-c301e307e285" />
+          </dependency>
+          <dependency Id="430cafb4-0312-44b2-96b3-716161f63933">
+            <componentMoniker Id="c9057f82-ca12-4d21-95e9-7c9303846118" LastKnownName="Le Logger" />
+            <elementDefinition Id="24c8d3ae-4cfc-4629-b0c6-c5e472ac4fcb" />
+          </dependency>
+          <dependency Id="2e9e0ee2-86ed-479e-ade1-dc43e0e2d951">
+            <componentMoniker Id="d8787e32-8988-4483-a467-4ef87c1435cf" LastKnownName="Domaine Objet" />
+            <elementDefinition Id="56ae04d1-2f12-4115-aa10-55a536f6dcff" />
+          </dependency>
+          <dependency Id="70036e5e-8fff-4a17-8b54-81557a8ceffc">
+            <componentMoniker Id="21d6b059-94eb-4b00-b902-1bd23e5221f7" LastKnownName="Application Services de gestion" />
+            <elementDefinition Id="679108d6-7389-4536-a2f9-ca99fedde376" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c9057f82-ca12-4d21-95e9-7c9303846118" name="Le Logger" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db59e25e-5190-4664-ac81-5c1802eac2ec" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="239c70c9-ba96-4761-89f1-90c1af7b8d4e" name="Modelisation">
+    <elementDefinition Id="20531c72-aa83-4696-b032-56bc07fd0804" />
+  </package>
+</componentModel>

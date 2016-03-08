@@ -1,0 +1,57 @@
+﻿@model SQLiteClient.Models.CommandeDetailsVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Messages.Details</h2>
+
+<div>
+    <h4>@Messages.Commande /h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CommandeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CommandeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCommande)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCommande)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLivraison)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateLivraison)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdresseLivraison)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdresseLivraison)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Livreur)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Livreur)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink(Messages.RetourListe, "Index")
+</p>

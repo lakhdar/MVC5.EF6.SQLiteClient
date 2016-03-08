@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c293438f-0aeb-4ef3-aaba-d26d8ba3f207" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="80f00162-5dc4-40f6-aad8-a954dcedeab7" name="Presentation  ASP MVC5">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="dbe082f6-ab09-4d46-8088-63934eae6761" direction="Forward">
+          <layerMoniker Id="9598fedf-1c42-484d-baf0-1be976f8c8e7" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="6847d201-9db3-4cda-9c66-1b5a16014b9d" direction="Forward">
+          <layerMoniker Id="d28d0056-7e2c-4bdc-a004-aa917f487ad5" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="41af466e-8e24-45fa-8692-86113b074204" direction="Forward">
+          <layerMoniker Id="4bf1f499-2c9c-41e3-bbee-a423f4d5aa03" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="9598fedf-1c42-484d-baf0-1be976f8c8e7" name="Application  Services de gestion">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="7ccebbc1-1c53-490f-ad3a-6d801374b4fb" direction="Forward">
+          <layerMoniker Id="d28d0056-7e2c-4bdc-a004-aa917f487ad5" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="60b19e81-42d8-4021-b7a0-80c01790e7b6" direction="Forward">
+          <layerMoniker Id="4bf1f499-2c9c-41e3-bbee-a423f4d5aa03" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="924d0447-c6d7-4b0b-b808-eb20f8fb7b8b" name="Services de gestion" />
+      </childLayers>
+    </layer>
+    <layer Id="d28d0056-7e2c-4bdc-a004-aa917f487ad5" name="Domaine d'objets">
+      <childLayers>
+        <layer Id="1bd5d852-8082-4461-9252-3457cd965486" name="Etities" />
+      </childLayers>
+    </layer>
+    <layer Id="23bd87ff-591c-46a1-a17d-514760a98d42" name="Infastructure">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="4f5778e8-2619-4c86-8da4-f47605c23650" direction="Forward">
+          <layerMoniker Id="d28d0056-7e2c-4bdc-a004-aa917f487ad5" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="b3bc0edf-dc65-41b5-bddb-585b59d15d88" direction="Forward">
+          <layerMoniker Id="52150f1c-fe6b-4311-bc8d-96e48b5dd787" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="f842d6c5-cb3a-405c-849b-845d9370a1a2" direction="Forward">
+          <layerMoniker Id="4bf1f499-2c9c-41e3-bbee-a423f4d5aa03" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="0b296a09-458c-495a-a35a-0b4c864f875c" name="Unit of work" />
+        <layer Id="fab935cd-ead8-46e4-a244-717b48f2957c" name="Repositories">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="457b55a9-aa0e-48f7-a323-736ac7f05e65" direction="Forward">
+              <layerMoniker Id="0b296a09-458c-495a-a35a-0b4c864f875c" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="52150f1c-fe6b-4311-bc8d-96e48b5dd787" name="SQLite" />
+    <layer Id="4bf1f499-2c9c-41e3-bbee-a423f4d5aa03" name="Instrumentation">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="7c141fe8-5bf1-4e90-bbec-0f8777f1a621" direction="Forward">
+          <layerMoniker Id="d28d0056-7e2c-4bdc-a004-aa917f487ad5" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="bc93fc9a-df80-411b-86bb-03dc3af1febd" name="Dependances" />
+        <layer Id="64d466b0-9465-4807-8cef-99469c81c904" name="Log" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>
