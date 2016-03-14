@@ -246,7 +246,7 @@
   <data name="TotalProduits" xml:space="preserve">
     <value>Total produits</value>
   </data>
-  <data name="UnityDansStock" xml:space="preserve">
+  <data name="UnitesDansStock" xml:space="preserve">
     <value>Dans le stock</value>
   </data>
   <data name="Ville" xml:space="preserve">

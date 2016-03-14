@@ -450,9 +450,9 @@ namespace SQLiteClient {
         /// <summary>
         ///   Looks up a localized string similar to Dans le stock.
         /// </summary>
-        public static string UnityDansStock {
+        public static string UnitesDansStock {
             get {
-                return ResourceManager.GetString("UnityDansStock", resourceCulture);
+                return ResourceManager.GetString("UnitesDansStock", resourceCulture);
             }
         }
         

@@ -262,6 +262,8 @@
     <Content Include="App_Data\Commandes.json" />
     <Content Include="App_Data\fournisseurs.json" />
     <Content Include="App_Data\Produit.json" />
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="ClassDiagram2.cd" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

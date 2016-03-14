@@ -27,7 +27,7 @@ namespace SQLiteClient.Extension
                         Fournisseur = model.Fournisseur.Nom,
                         TotalCommandes = model.CommandeProduits.Count(),
                         PrixUnitaire = model.PrixUnitaire,
-                        UnityDansStock = model.UnityDansStock,
+                        UnitesDansStock = model.UnityDansStock,
 
                     });
                 }
@@ -50,7 +50,7 @@ namespace SQLiteClient.Extension
                     Fournisseur = model.Fournisseur.Nom,
                     TotalCommandes = model.CommandeProduits.Count(),
                     PrixUnitaire = model.PrixUnitaire,
-                    UnityDansStock = model.UnityDansStock,
+                    UnitesDansStock = model.UnityDansStock,
 
                 } ;
             }
@@ -69,7 +69,7 @@ namespace SQLiteClient.Extension
                     PrixUnitaire = model.PrixUnitaire,
                     FournisseurID=1,
                     CategorieID=1,
-                    UnityDansStock = model.UnityDansStock
+                    UnityDansStock = model.UnitesDansStock
                 };
             }
 
@@ -96,7 +96,7 @@ namespace SQLiteClient.Extension
                         Fournisseur = model.Fournisseur.Nom,
                         TotalCommandes =( model.CommandeProduits!= null)? model.CommandeProduits.Count():0,
                         PrixUnitaire = model.PrixUnitaire,
-                        UnityDansStock = model.UnityDansStock,
+                        UnitesDansStock = model.UnityDansStock,
 
                     });
                 }

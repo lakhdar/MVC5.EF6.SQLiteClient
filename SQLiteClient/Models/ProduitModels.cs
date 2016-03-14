@@ -32,8 +32,8 @@ namespace SQLiteClient.Models
         public Decimal PrixUnitaire { get; set; }
 
 
-        [Display(Name = "UnityDansStock", ResourceType = typeof(Messages))]
-        public int UnityDansStock { get; set; }
+        [Display(Name = "UnitesDansStock", ResourceType = typeof(Messages))]
+        public int UnitesDansStock { get; set; }
     }
 
     public class ProduitCreationVM
