@@ -35,7 +35,7 @@
                 @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().PrixUnitaire)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().UnityDansStock)
+                @Html.DisplayNameFor(model => model.PagedData.FirstOrDefault().UnitesDansStock)
             </th>
             <th></th>
         </tr>
@@ -62,7 +62,7 @@
                     @Html.DisplayFor(modelItem => item.PrixUnitaire)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.UnityDansStock)
+                    @Html.DisplayFor(modelItem => item.UnitesDansStock)
                 </td>
                 <td>
                     @Html.ActionLink(Messages.Details, "Details", new { id = item.ProduitID }) |
