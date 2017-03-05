@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS UI Tree demo</title>
+ 
+  <link rel="stylesheet" href="https://angular-ui-tree.github.io/angular-ui-tree/bower_components/bootstrap-css/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-tree/2.22.5/angular-ui-tree.min.css">
+  <link rel="stylesheet" href="https://angular-ui-tree.github.io/angular-ui-tree/css/app.css">
+</head>
+<style>
+
+ 
+</style>
+
+<body ng-app="demoApp">
+<div class="container" ng-controller="mainCtrl">
+   <div class="jumbotron">
+    <h1>local tronet</h1>
+
+      <p class="lead">The AngularJS Tree component with drag and drop support.</p>
+
+       
+   </div>
+    <div class="row">
+	
+		<div class="col-lg-6" style="border:1px solid red" ng-controller="rightCtrl"  >
+		<div ui-tree="treeOptions" data-clone-enabled="true" data-nodrop-enabled="true">
+		    <ul class="nav" ui-tree-nodes="" ng-model="categories"  >
+				 <li class="" ng-repeat="cat in categories" ui-tree-node>
+					 <div class="row" ui-tree-handle  data-nodrop-enabled="true">
+						<div class="col-sm-6 btn" >
+							{{cat.title}}
+						</div>
+					 </div>
+				 </li>
+		 </ul>
+		 
+		   
+		</div>
+		</div>
+		<div class="col-lg-6" style="border:1px solid green"  >
+		  <bt-project-backtest backtests="rawBacktests"></bt-project-backtest>
+		</div>
+	
+	</div>
+
+    
+ 
+
+<script type="text/ng-template" id="btProjectBacktest.html">
+<div class="row" >
+<div class="col-sm-12" ng-repeat="node in treeNodes track by $index" >
+		<h3 > Backtest {{$index +1}}</h3>
+     <div ui-tree="treeOptions" id="project-backtest-root" class="bt-project-backtest-root"  >
+      <ol ui-tree-nodes="" ng-model="node.nodes" >
+        <li ng-repeat="node in node.nodes" ui-tree-node ng-include="node.type+'.html'" class="backtest" ></li>
+      </ol>
+    </div>
+  </div>
+</div>
+</script>
+
+
+
+
+
+<script type="text/ng-template" id="operator.html">
+  <div class="tree-node" ui-tree-handle>
+   
+    <div class="tree-node-content" >
+      <a class="btn btn-success btn-xs" data-nodrag ng-click="toggle(this)" ng-if="!node.cls">
+        <span class="glyphicon" ng-class="{
+          'glyphicon-chevron-right': collapsed,
+          'glyphicon-chevron-down': !collapsed
+          }">
+        </span>
+      </a>
+
+      {{node.title}}
+
+      <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="delete(this)" ng-if="!node.cls"><span class="glyphicon glyphicon-remove"></span></a>
+      <a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;" ng-if="!node.cls"><span class="glyphicon glyphicon-plus"></span></a>
+    </div>
+  </div>
+  <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: collapsed}">
+    <li ng-repeat="node in node.nodes" ui-tree-node ng-include="node.type+'.html'">
+    </li>
+  </ol>
+</script>
+      
+  <script type="text/ng-template" id="strategy.html">
+  <div class="tree-node" style="color:red" ui-tree-handle>
+   
+    <div class="tree-node-content" >
+      <a class="btn btn-success btn-xs" data-nodrag ng-click="toggle(this)" ng-if="!node.cls">
+        <span class="glyphicon" ng-class="{
+          'glyphicon-chevron-right': collapsed,
+          'glyphicon-chevron-down': !collapsed
+          }">
+        </span>
+      </a>
+
+      {{node.title}}
+
+      <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="delete(this)"><span class="glyphicon glyphicon-remove"></span></a>
+      <a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;"><span class="glyphicon glyphicon-plus"></span></a>
+    </div>
+  </div>
+  
+</script>   
+<script type="text/ng-template" id="timeserie.html">
+  <div class="tree-node" style="color:green" ui-tree-handle>
+   
+    <div class="tree-node-content" >
+      <a class="btn btn-success btn-xs" data-nodrag ng-click="toggle(this)" ng-if="!node.cls">
+        <span class="glyphicon" ng-class="{
+          'glyphicon-chevron-right': collapsed,
+          'glyphicon-chevron-down': !collapsed
+          }">
+        </span>
+      </a>
+
+      {{node.title}}
+
+      <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="delete(this)" ng-if="!node.cls"><span class="glyphicon glyphicon-remove"></span></a>
+      <a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;"><span class="glyphicon glyphicon-plus" ng-if="!node.cls"></span></a>
+    </div>
+  </div>
+  
+</script>   
+      
+
+   
+
+</div>
+
+ 
+
+<script src="https://angular-ui-tree.github.io/angular-ui-tree/bower_components/angular/angular.min.js"></script>
+<script src="https://angular-ui-tree.github.io/angular-ui-tree/bower_components/angular-route/angular-route.min.js"></script>
+<script src="https://angular-ui-tree.github.io/angular-ui-tree/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-tree/2.22.5/angular-ui-tree.js"></script>
+
+
+<script>
+(function () {
+  'use strict';
+
+  angular.module('demoApp', ['ui.tree',   'ui.bootstrap'])
+
+.config(['$compileProvider', function ($compileProvider) {
+     
+      $compileProvider.debugInfoEnabled(false);
+    }])
+	
+.controller('mainCtrl', function($scope ) {
+    $scope.rawBacktests = [{
+        'id': Math.random(),
+		'type':'operator',
+		'cls':'backtest',
+        'nodes': [
+					{
+					'id': Math.random(),
+					'title': 'safety op',
+					'type':'operator',
+					'nodes': [
+								{
+								'id': Math.random(),
+								'title': 'st dumy',
+								'type':'strategy',
+								'nodes': []
+								}
+								]
+					},
+					 
+				]
+      }, {
+        'id': Math.random(),
+        'title': 'backtest - item2',
+		'cls':'backtest',
+		'type':'operator',
+        'nodes': [
+					{
+					'id': Math.random(),
+					'title': 'child st',
+					'type':'strategy',
+					'nodes': []
+					}
+		
+		
+				]
+      }, {
+        'id': Math.random(),
+        'title': 'backtest - item4',
+		'cls':'backtest',
+		'type':'operator',
+        'nodes': [{
+					'id': Math.random(),
+					'title': 'recul - op',
+					'type':'operator',
+					'nodes': [
+								{
+								'id': Math.random(),
+								'title': 'st - rienderien',
+								'type':'strategy',
+								'nodes': []
+								}
+								]
+					}]
+      }, {
+        'id': Math.random(),
+        'title': 'backtest - item3',
+		'cls':'backtest',
+		'type':'timeserie',
+        'nodes': []
+      }];
+}) 
+.controller('rightCtrl', function($scope,projectBacktestService ) {
+
+$scope.treeOptions=projectBacktestService.geTreeOptions($scope);
+    $scope.categories = [{
+        'id': Math.random(),
+        'title': 'operator - 1',
+		 'type':'operator',
+        'nodes': []
+      }, {
+        'id': Math.random(),
+		 'type':'strategy',
+        'title': 'strategy - 1',
+        'nodes': []
+      }, {
+        'id': Math.random(),
+		 'type':'timeserie',
+        'title': 'timeserie - 1',
+        'nodes': []
+      }, {
+        'id': Math.random(),
+		'type':'signal',
+        'title': 'signal - 1',
+        'nodes': []
+      }];
+      
+})
+.directive("btProjectBacktest",['projectBacktestService',function(projectBacktestService){
+return {
+     scope:{
+	      backtests:'='
+	 },
+    template:'<div ng-include="\'btProjectBacktest.html\'"></div>',
+	controller: function($scope){
+	
+	$scope.newSubItem = function (scope) {
+		$scope.treeNodes=projectBacktestService.cloneNode(scope.$modelValue);
+		$scope.treeNodes=projectBacktestService.Validate ();
+      };
+	  
+	  $scope.delete=function (scope){
+	  
+			scope.remove();
+			$scope.treeNodes=projectBacktestService.removeEmptyBaktests();
+			$scope.treeNodes=projectBacktestService.tryPushEmptyBaktest()
+	  }
+	  
+	    $scope.treeNodes=projectBacktestService.init( $scope.backtests||[]  );
+		$scope.treeOptions=projectBacktestService.geTreeOptions();
+	}
+}
+
+}])
+.service('projectBacktestService', function() {
+	this.currentDraggedNode=null;
+	this.treeNodes=[];
+	
+	this.init=function(backtests){
+		this.treeNodes=(backtests||[]).map(function(item){return item});
+		return this.treeNodes;
+	}
+	
+	this.cloneNode=function(node){
+	  this.treeNodes=this._clone(this.treeNodes,node)
+	 return this.treeNodes;
+	}
+	
+	this._clone=function(treeNodes,node,done){
+	   if(done)return treeNodes;
+	   
+	   for(var i=0;i<treeNodes.length;i++){
+		  var current=treeNodes[i];
+		  if(current.id==node.id){
+			 var clone=angular.copy(current);
+			 clone.id=Math.random();
+			treeNodes.push(clone);
+			this.currentDraggedNode=current;
+			
+			done=true;
+		  }
+		  this._clone(treeNodes[i].nodes,node,done)
+	   
+	   }
+	 
+	 return treeNodes;
+	}
+	
+	
+	
+	this.geTreeOptions=function(){
+	   
+	   var that =this;
+	   return {
+			 dropped :function(e){
+				that.treeNodes=that.Validate ();
+			 },
+			 dragStart:function(e){
+			     that.currentDraggedNode=e.source.nodeScope.$modelValue
+			 },
+		}
+	}
+
+    this.removeEmptyBaktests = function () {
+	       
+        var enmptyIndexs=[];
+		for(var i=0;i<this.treeNodes.length-1;i++){
+		var node=this.treeNodes[i].nodes
+		  if(!node||!node.length){
+		  enmptyIndexs.push(i);
+		  }
+		}
+		for(var j=0;j<enmptyIndexs.length;j++){
+			this.treeNodes.splice(enmptyIndexs[j],1)
+		}
+		  return this.treeNodes;
+    }
+	this.tryPushEmptyBaktest = function () {
+		   var lastNode=this.treeNodes[this.treeNodes.length-1]
+		   if(lastNode&&lastNode.nodes&&lastNode.nodes.length){
+			   this.treeNodes.push( 
+				{
+				'id': Math.random(),
+				'type':'backtest',
+				 
+				'nodes': []
+			  }
+			)
+		}
+		   
+		    
+        return this.treeNodes
+		  
+    }
+	 
+	 this.removeDuplicateInRoot = function (index) {
+			var that=this;
+			this.treeNodes[index].nodes= this.treeNodes[index].nodes.filter(function(node){
+				return  node.id==that.currentDraggedNode.id
+			});
+		   
+		  return this.treeNodes
+    }
+	
+	
+	
+	
+	
+	this.reorderRootTree=function (duplicateNodeInRoot,startIndex,endIndex) {
+		  
+		     if(!duplicateNodeInRoot){
+				return this.treeNodes
+			 }
+		  
+		    var incr=startIndex<endIndex?1:-1
+		    var nodeVal=this.treeNodes[startIndex+incr].nodes[0];
+			this.treeNodes[startIndex+incr].nodes[0]=duplicateNodeInRoot;
+			 
+			var next=startIndex+incr;
+			this.treeNodes=  this.reorderRootTree(nodeVal,next,endIndex);
+			   
+		return this.treeNodes ;
+		  
+    }
+	
+	 this.findDuplicateAndEmptyNodesInRoot = function () {
+		   var duplicateNodeInRootIndex,
+		     duplicateNodeInRoot,
+		     emptyNodeInRootIndex,
+			foundEmptyNodeInRootIndex=false,
+			foundDuplicateNodeInRoot=false;
+		    
+		  
+         
+		 for(var i=0;i<this.treeNodes.length;i++){
+		 var thisNode=this.treeNodes[i];
+			  if(thisNode.nodes&&thisNode.nodes.length>1)
+			  {
+			    for(var j=0;j<thisNode.nodes.length;j++){
+					if(thisNode.nodes[j].id!=this.currentDraggedNode.id){
+						duplicateNodeInRoot=thisNode.nodes[j]
+					}
+				}
+				   
+				  duplicateNodeInRootIndex=i;
+				  foundDuplicateNodeInRoot=true;
+			  }
+			  if(!foundEmptyNodeInRootIndex&&(!thisNode.nodes||!thisNode.nodes.length) ){
+					emptyNodeInRootIndex=i;
+					foundEmptyNodeInRootIndex=true;
+			  }
+		 }
+		 return {
+				emptyNodeInRootIndex:emptyNodeInRootIndex,
+				duplicateNodeInRootIndex:duplicateNodeInRootIndex,
+				foundEmptyNodeInRootIndex:foundEmptyNodeInRootIndex,
+				foundDuplicateNodeInRoot:foundDuplicateNodeInRoot,
+				duplicateNodeInRoot:duplicateNodeInRoot,
+				}
+		
+		  
+    }
+	
+	
+	
+	 this.Validate = function () {
+	       
+        var result=  this.findDuplicateAndEmptyNodesInRoot();
+		if(result.foundDuplicateNodeInRoot){
+			this.removeDuplicateInRoot(result.duplicateNodeInRootIndex);
+			this.treeNodes=this.reorderRootTree(result.duplicateNodeInRoot,result.duplicateNodeInRootIndex,result.emptyNodeInRootIndex);
+		}
+		this.treeNodes=this.removeEmptyBaktests();
+		this.treeNodes=this.tryPushEmptyBaktest()
+		
+		return this.treeNodes
+			  
+    }
+
+});
+})();
+
+
+</script>
+ 
+</body>
+</html>
